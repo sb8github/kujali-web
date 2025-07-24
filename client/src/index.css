@@ -109,18 +109,23 @@
     animation-delay: -4s;
   }
 
+  .hero-title, .modern-title-font {
+    font-family: 'Montserrat', 'Inter', 'Poppins', Arial, sans-serif !important;
+  }
+
   .hero-title {
-    font-size: clamp(3rem, 8vw, 8rem);
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: clamp(4rem, 12vw, 10rem);
+    transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     transform-origin: center;
     width: auto;
   }
 
-  .hero-title.expanded {
-    font-size: clamp(2rem, 6vw, 6rem);
-    transform: translateY(-20px) scale(1.2);
-    width: 75vw;
-    max-width: 75vw;
+  .hero-title.zoomed {
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 20;
+    position: relative;
+    /* The actual transform/opacity is handled by framer-motion, but you can add fallback here */
   }
 
   .typewriter {
@@ -214,14 +219,25 @@
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: clamp(2rem, 12vw, 4rem);
+    font-size: clamp(2.5rem, 16vw, 5rem);
     width: auto;
   }
   
   .hero-title.expanded {
-    font-size: clamp(1.5rem, 10vw, 3rem);
-    transform: translateY(-20px) scale(1.1);
-    width: 90vw;
-    max-width: 90vw;
+    font-size: clamp(2rem, 20vw, 7rem);
+    transform: translateY(-20px) scale(1.2);
+    width: 100vw;
+    max-width: 100vw;
   }
+}
+
+.poppins-mask-title {
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-weight: 900;
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 1;
+  letter-spacing: 0;
+  transition: color 0.5s, background 0.5s, letter-spacing 1.2s, font-size 1.2s;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

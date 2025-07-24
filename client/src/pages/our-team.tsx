@@ -88,11 +88,8 @@ export default function OurTeam() {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 * index }}
                 className="bg-black/30 backdrop-blur-custom rounded-2xl p-8 text-center card-hover"
               >
                 <img
@@ -103,7 +100,7 @@ export default function OurTeam() {
                 <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
                 <p className="text-[#f2ddc7] font-semibold mb-4">{member.role}</p>
                 <p className="text-gray-300">{member.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -112,9 +109,8 @@ export default function OurTeam() {
         <div>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
             className="text-4xl font-bold text-center mb-12 text-[#f2ddc7]"
           >
             Advisors & Mentors
@@ -122,12 +118,8 @@ export default function OurTeam() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {advisors.map((advisor, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 * index }}
-                viewport={{ once: true }}
                 className="bg-[#2b5f56]/20 backdrop-blur-custom rounded-xl p-6 text-center card-hover"
               >
                 <img
@@ -138,7 +130,7 @@ export default function OurTeam() {
                 <h4 className="text-lg font-bold text-white">{advisor.name}</h4>
                 <p className="text-[#f2ddc7] text-sm mb-2">{advisor.role}</p>
                 <p className="text-gray-300 text-sm">{advisor.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Home, Mail } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import LogoKujali from "@/assets/Logo_transparent.svg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,9 +38,12 @@ export default function Header() {
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center space-x-2 cursor-pointer"
               >
-                <div className="w-10 h-10 bg-gradient-to-br from-[#2b5f56] to-[#1a403a] rounded-lg flex items-center justify-center">
-                  <span className="text-[#f2ddc7] font-bold text-xl">K</span>
-                </div>
+                <img
+                  src={LogoKujali}
+                  alt="Kujali Logo"
+                  className="w-14 h-14 object-contain"
+                  style={{ background: 'transparent' }}
+                />
                 <span className="text-xl font-bold text-gradient">KUJALI</span>
               </motion.div>
             </Link>

@@ -92,11 +92,8 @@ export default function WhatWeDo() {
             {keyFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.1 * index }}
                   className="bg-black/30 backdrop-blur-custom rounded-2xl p-8 card-hover"
                 >
                   <div className="w-16 h-16 bg-[#f2ddc7] rounded-2xl flex items-center justify-center mb-6">
@@ -104,7 +101,7 @@ export default function WhatWeDo() {
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">{feature.title}</h3>
                   <p className="text-gray-300">{feature.description}</p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -114,7 +111,7 @@ export default function WhatWeDo() {
         <div>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="text-4xl font-bold text-center mb-12 text-[#f2ddc7]"
@@ -126,12 +123,8 @@ export default function WhatWeDo() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 * index }}
-                  viewport={{ once: true }}
                   className="bg-gradient-to-br from-[#2b5f56] to-[#1a403a] rounded-2xl p-8 card-hover"
                 >
                   <div className="w-20 h-20 bg-[#f2ddc7] rounded-2xl flex items-center justify-center mb-6 mx-auto">
@@ -139,7 +132,7 @@ export default function WhatWeDo() {
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4 text-center">{service.title}</h3>
                   <p className="text-gray-100 text-center">{service.description}</p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
