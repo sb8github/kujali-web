@@ -51,7 +51,7 @@ export default function TestimonialSection() {
         </motion.h2>
         
         <div className="max-w-4xl mx-auto">
-          <div className="relative h-80 overflow-hidden">
+          <div className="relative min-h-[300px] md:min-h-[320px] overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide}
@@ -61,21 +61,21 @@ export default function TestimonialSection() {
                 transition={{ duration: 0.6 }}
                 className="absolute inset-0 flex items-center"
               >
-                <div className="text-center p-8 w-full">
-                  <blockquote className="text-2xl md:text-3xl italic text-gray-300 mb-8">
+                <div className="text-center p-4 md:p-8 w-full">
+                  <blockquote className="text-lg md:text-2xl lg:text-3xl italic text-gray-300 mb-6 md:mb-8 leading-relaxed">
                     "{testimonials[currentSlide].quote}"
                   </blockquote>
                   <div className="flex items-center justify-center">
                     <img
                       src={testimonials[currentSlide].image}
                       alt={testimonials[currentSlide].name}
-                      className="w-16 h-16 rounded-full mr-4 object-cover"
+                      className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-3 md:mr-4 object-cover"
                     />
                     <div>
-                      <p className="font-semibold text-[#f2ddc7]">
+                      <p className="font-semibold text-[#f2ddc7] text-sm md:text-base">
                         {testimonials[currentSlide].name}
                       </p>
-                      <p className="text-gray-400">
+                      <p className="text-gray-400 text-xs md:text-sm">
                         {testimonials[currentSlide].title}
                       </p>
                     </div>
@@ -85,12 +85,12 @@ export default function TestimonialSection() {
             </AnimatePresence>
           </div>
           
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-6 md:mt-8 space-x-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
+                className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
                   index === currentSlide
                     ? "bg-[#f2ddc7]"
                     : "bg-gray-600 hover:bg-gray-500"
