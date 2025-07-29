@@ -150,15 +150,15 @@ export default function Contact() {
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
                 <motion.a
                   whileHover={{ scale: 1.05 }}
-                  href="mailto:hello@kujali.org"
+                  href="mailto samhith@kujali-ai.org"
                   className="flex items-center text-[#f2ddc7] hover:text-white transition-colors"
                 >
                   <Mail className="mr-2" size={20} />
-                  hello@kujali.org
+                  samhith@kujali-ai.org
                 </motion.a>
                 <motion.a
                   whileHover={{ scale: 1.05 }}
-                  href="https://linkedin.com/company/kujali"
+                  href="https://www.linkedin.com/in/samhithb/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-[#f2ddc7] hover:text-white transition-colors"

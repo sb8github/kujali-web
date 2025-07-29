@@ -2,63 +2,76 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Home } from "lucide-react";
 
+// Import team member images
+import sbImage from "@/assets/sb.jpg";
+import srImage from "@/assets/sr.jpg";
+import hsImage from "@/assets/hs.jpg";
+
+// Import advisor images
+import saImage from "@/assets/sa.jpg";
+import hdImage from "@/assets/hd.jpg";
+import ktImage from "@/assets/kt.jpg";
+import dlImage from "@/assets/dl.jpg";
+import dmImage from "@/assets/dm.jpg";
+import paImage from "@/assets/pa.jpg";
+
 const teamMembers = [
   {
-    name: "Dr. Sarah Mitchell",
-    role: "CEO & Co-Founder",
-    description: "Former WHO Global Health Director with 15+ years in maternal health. Led initiatives across 30+ countries improving care for underserved populations.",
-    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+    name: "Samhith Bhrugubanda",
+    role: "Co-Founder",
+    description: "B.S./M.S.E in Biomedical Engineering, Johns Hopkins University. Specializes in designing AI-integrated medical devices for low-resource settings. Brings hands-on experience in medical equipment repair and user-centered product design for LMICs.",
+    image: sbImage,
   },
   {
-    name: "Dr. James Rodriguez",
-    role: "CTO & Co-Founder",
-    description: "AI research scientist from Stanford with expertise in healthcare applications. Previously led machine learning teams at Google Health and Microsoft Research.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+    name: "Sidharth Raghavan",
+    role: "Co-Founder",
+    description: "B.S./M.S.E in Biomedical Engineering & Computer Science, Johns Hopkins University. Leads technical development, with expertise in deploying AI in clinical trials, including PedAccel's validation in the Johns Hopkins PICU. Secured $100k+ in grants and managed IRB approved, regulatory-compliant trials.",
+    image: srImage,
   },
   {
-    name: "Dr. Aisha Patel",
-    role: "Chief Medical Officer",
-    description: "Board-certified obstetrician with 20+ years of experience in low-resource settings. Former medical director at Doctors Without Borders, specializing in emergency obstetric care.",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+    name: "Dr. Harshadkumar Sanghvi",
+    role: "Clinical Advisor",
+    description: "Former CMO at Jhpiego and inventor of the paper and digital ePartogram. Offers access to WHO-aligned protocols and clinical networks across Africa, with decades of expertise in maternal health innovation and LMIC care delivery.",
+    image: hsImage,
   },
 ];
 
 const advisors = [
   {
-    name: "Prof. Michael Thompson",
-    role: "Global Health Policy Advisor",
-    description: "Harvard School of Public Health, former WHO Assistant Director-General",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+    name: "Dr. Soumyadipta Acharya",
+    role: "Global Health Implementation Advisor",
+    description: "Director of Center for Bioengineering and Design, Johns Hopkins University",
+    image: saImage,
   },
   {
-    name: "David Kim",
-    role: "Technology Advisor",
-    description: "Former VP of Engineering at Apple Health, AI/ML expert",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+    name: "Dr. Hema Divakar",
+    role: "Medical Advisor India",
+    description: "CEO of ARTIST, Medical Director, OBGYN",
+    image: hdImage,
   },
   {
-    name: "Lisa Chen",
-    role: "Strategic Advisor",
-    description: "Partner at Andreessen Horowitz, healthcare investment specialist",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+    name: "Dr. Kusum Thapa",
+    role: "Medical Advisor Nepal",
+    description: "VP of South Asian Federation for OBGYN",
+    image: ktImage,
   },
   {
-    name: "Dr. Patricia Williams",
-    role: "Clinical Advisor",
-    description: "Johns Hopkins Bloomberg School of Public Health, maternal health researcher",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+    name: "Daniel Lee",
+    role: "Business Strategy Advisor",
+    description: "CEO of Tissue Regenix",
+    image: dlImage,
   },
   {
-    name: "Roberto Santos",
-    role: "Impact Advisor",
-    description: "Former UNICEF Regional Director, social impact measurement expert",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+    name: "Dr. Diwakar Mohan",
+    role: "Digital Health Advisor",
+    description: "Associate Director for the International Center for Maternal Newborn Health at the Johns Hopkins Bloomberg School of Public Health",
+    image: dmImage,
   },
   {
-    name: "Dr. Priya Sharma",
+    name: "Paul Davidson",
     role: "Innovation Advisor",
-    description: "MIT Innovation Lab, digital health transformation specialist",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+    description: "Associate Director at Pava Center for Entrepreneurship",
+    image: paImage,
   },
 ];
 

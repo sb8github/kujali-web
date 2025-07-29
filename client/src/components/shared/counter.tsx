@@ -4,9 +4,10 @@ interface CounterProps {
   target: number;
   isVisible: boolean;
   duration?: number;
+  suffix?: string;
 }
 
-export default function Counter({ target, isVisible, duration = 3000 }: CounterProps) {
+export default function Counter({ target, isVisible, duration = 3000, suffix }: CounterProps) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -42,5 +43,5 @@ export default function Counter({ target, isVisible, duration = 3000 }: CounterP
     };
   }, [target, isVisible, duration]);
 
-  return <span>{count.toLocaleString()}</span>;
+  return <span>{count.toLocaleString()}{suffix}</span>;
 }

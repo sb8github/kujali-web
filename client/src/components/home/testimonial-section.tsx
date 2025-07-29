@@ -1,25 +1,29 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import hsImage from "@/assets/hs.jpg";
+import blankImage from "@/assets/Icon_Tan_on_Green.svg";
 
 const testimonials = [
   {
-    quote: "Kujali has transformed how we approach maternal care in our region. The real-time decision support has been a game-changer for our healthcare workers.",
-    name: "Dr. Amara Johnson",
-    title: "Lead Obstetrician, Regional Hospital",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
+    quote: "“Kujali represents a paradigm-shift in labor care. Decision-making is so complicated that frontline workers cannot make good decisions because there are too many variables changing all the time.”",
+    name: "Dr. Harshadkumar Sanghvi",
+    title: "Global Leader of Maternal Health, Emeritus CMO at Jhpiego",
+    image: hsImage,
   },
   {
-    quote: "The AI-powered insights help us make critical decisions with confidence, even in resource-limited settings. It's like having an expert consultant available 24/7.",
-    name: "Sarah Nakamura",
-    title: "Senior Midwife, Community Health Center",
-    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
+    quote: "“[Decision support] helps us very much and empowers us to know what to do to the mother. I feel good hearing reminders. They jolt me into making decisions, and they help me a lot in my decisions.”",
+    name: "Skilled Birth Attendant",
+    title: "Tanzania",
+    image: blankImage,
   },
   {
-    quote: "Kujali's technology bridges the gap between rural clinics and expert knowledge. We've seen significant improvements in maternal and newborn outcomes.",
-    name: "Dr. Michael Chen",
-    title: "Health Systems Director, Ministry of Health",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
+    quote: "This app would be very helpful for us. It would be a great tool for us to use in the hospital.",
+    name: "OBGYN",
+    title: "Nepal",
+    image: blankImage,
   },
+  
+
 ];
 
 export default function TestimonialSection() {

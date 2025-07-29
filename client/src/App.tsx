@@ -11,6 +11,7 @@ import WhatWeDo from "@/pages/what-we-do";
 import OurTeam from "@/pages/our-team";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
+import { useScrollToTop } from "@/hooks/use-scroll-to-top";
 
 function Router() {
   return (
@@ -26,6 +27,8 @@ function Router() {
 }
 
 function App() {
+  useScrollToTop();
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

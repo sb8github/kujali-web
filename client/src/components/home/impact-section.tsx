@@ -4,16 +4,19 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const stats = [
   {
-    target: 290000,
-    label: "Maternal Deaths Prevented Annually",
+    target: 30,
+    label: "Potential to reduce maternal mortality",
+    suffix: "%",
   },
   {
-    target: 2600000,
-    label: "Newborn Deaths Prevented Annually",
+    target: 40,
+    label: "Potential decrease in unnecessary interventions",
+    suffix: "%",
   },
   {
-    target: 195,
-    label: "Countries Served",
+    target: 2000000,
+    label: "Poised to impact over 2 million births, preventing 500k deaths",
+    suffix: "+",
   },
 ];
 
@@ -44,7 +47,7 @@ export default function ImpactSection() {
               className="text-center bg-[#2b5f56]/10 p-8 rounded-2xl backdrop-blur-sm card-hover"
             >
               <div className="text-5xl md:text-6xl font-black text-[#f2ddc7] mb-4">
-                <Counter target={stat.target} isVisible={isVisible} />
+                <Counter target={stat.target} isVisible={isVisible} suffix={stat.suffix} />
               </div>
               <p className="text-xl text-gray-300">{stat.label}</p>
             </motion.div>

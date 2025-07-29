@@ -3,34 +3,42 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const milestones = [
   {
-    year: "2020",
+    year: "Q4 2024",
     title: "Project Inception",
     description: "Founded with the mission to revolutionize maternal care in low and middle-income countries through AI technology.",
   },
+  
   {
-    year: "2021",
+    year: "Q1 2025",
     title: "AI Development",
-    description: "Developed core AI algorithms with leading medical experts and data scientists from around the world.",
+    description: "Developed core AI algorithms with leading medical experts and clinicians from around the world.",
   },
   {
-    year: "2022",
-    title: "Pilot Programs",
-    description: "Launched pilot programs in 5 countries, training over 200 healthcare workers on our platform.",
+    year: "Q1 2025",
+    title: "CBID Healthcare Design Award",
+    description: "Kujali awarded 3rd place in Digital Health Track among 440 proposals from 44 countries",
   },
   {
-    year: "2023",
-    title: "Scale Impact",
-    description: "Expanded to 15 countries and supported over 10,000 births with improved outcomes.",
+    year: "Q2 2025",
+    title: "Pava Center Summer Incubator",
+    description: "Kujali selected for Pava Center Summer Incubator, a 10-week program for early-stage startups",
   },
   {
-    year: "2024",
-    title: "Recognition",
-    description: "Received international recognition from WHO and won the Global Health Innovation Award.",
+  year: "Q2 2025",
+  title: "Preliminary Validation ",
+  description: "Started preliminary validation with data from 2000+ patients with maternal health experts",
   },
+
   {
-    year: "2025",
+    year: "Q3 2025",
+    title: "Field Interviews",
+    description: "Conducted field interviews with healthcare workers and patients in India.",
+  },
+
+  {
+    year: "2026",
     title: "Future Goals",
-    description: "Planning to reach 50 countries and support 1 million births annually by end of 2025.",
+    description: "Planning to reach 100 hospitals across 5 countries by end of 2026.",
   },
 ];
 
