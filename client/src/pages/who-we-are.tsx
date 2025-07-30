@@ -43,6 +43,7 @@ export default function WhoWeAre() {
                 <Typewriter 
                   text="To democratize access to expert maternal care knowledge through AI-powered decision support, ensuring safer deliveries and healthier outcomes for mothers and babies worldwide."
                   delay={1000}
+                  speed={30}
                 />
               </p>
             </motion.div>
@@ -57,7 +58,8 @@ export default function WhoWeAre() {
               <p className="text-lg text-gray-200">
                 <Typewriter 
                   text="A world where every healthcare worker has instant access to expert guidance, where technology empowers compassionate care, and where no mother or baby is lost due to lack of knowledge or resources."
-                  delay={3000}
+                  delay={1000}
+                  speed={30}
                 />
               </p>
             </motion.div>

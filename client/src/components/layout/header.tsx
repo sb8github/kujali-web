@@ -72,7 +72,7 @@ export default function Header() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="mailto:hello@kujali.org"
+                href="mailto:samhith@kujali-ai.org"
                 className="text-[#f2ddc7] hover:text-white transition-colors"
               >
                 <Mail size={20} />
@@ -80,7 +80,7 @@ export default function Header() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="https://linkedin.com/company/kujali"
+                href="https://www.linkedin.com/in/samhithb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#f2ddc7] hover:text-white transition-colors"
@@ -147,13 +147,13 @@ export default function Header() {
                   className="pt-8 flex space-x-6"
                 >
                   <a
-                    href="mailto:hello@kujali.org"
+                    href="mailto:samhith@kujali-ai.org"
                     className="text-[#f2ddc7] hover:text-white transition-colors"
                   >
                     <Mail size={24} />
                   </a>
                   <a
-                    href="https://linkedin.com/company/kujali"
+                    href="https://www.linkedin.com/in/samhithb/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#f2ddc7] hover:text-white transition-colors"
