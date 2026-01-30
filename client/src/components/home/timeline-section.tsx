@@ -32,13 +32,19 @@ const milestones = [
   {
     year: "Q3 2025",
     title: "Field Interviews",
-    description: "Conducted field interviews with healthcare workers and patients in India.",
+    description: "Conducted field interviews with healthcare workers and patients in India (Karnataka, Maharashtra, Chhattisgarh).",
+  },
+
+  {
+    year: "Q4 2025",
+    title: "Partnership Building",
+    description: "Built strong partnerships with healthcare providers and institutions including ARTIST for Her, Jhpiego, JSS, Divakar's Specialty Hospital, and Intelehealth.",
   },
 
   {
     year: "2026",
-    title: "Future Goals",
-    description: "Planning to reach 100 hospitals across 5 countries by end of 2026.",
+    title: "Future",
+    description: "Pilots Underway, Improving the Platform, and Scaling the Impact",
   },
 ];
 
